@@ -1,0 +1,41 @@
+# LangGraph + LLM
+langgraph>=0.2.0
+langchain>=0.2.0
+langchain-community>=0.2.0
+langchain-groq>=0.1.0
+groq>=0.4.0
+
+# Streamlit Frontend
+streamlit>=1.32.0
+
+# PDF Text Extraction
+pdfplumber>=0.10.0
+
+# Image OCR
+pytesseract>=0.3.10
+pillow>=10.0.0
+opencv-python>=4.8.0
+
+# URL/Portfolio Scraping
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=5.0.0
+
+# Data Validation & Structure
+pydantic>=2.5.0
+python-dateutil>=2.8.0
+
+# Spelling & Grammar Check
+language-tool-python>=2.7.0
+
+# Environment Variables
+python-dotenv>=1.0.0
+
+# PDF Info (page count)
+PyPDF2>=3.0.0
+
+# Async Support
+aiohttp>=3.9.0
+
+# Type Hints
+typing-extensions>=4.9.0

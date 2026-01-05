@@ -1,0 +1,161 @@
+%-------------------------
+% Sample Resume Template
+% Author: Resume Generator AI
+% License: MIT
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+\begin{center}
+    {\Huge\scshape John Doe} \\ \vspace{1pt}
+    \small San Francisco, CA $|$ (555) 123-4567 $|$ \href{mailto:john.doe@email.com}{john.doe@email.com} \\
+    \small \href{https://linkedin.com/in/johndoe}{\underline{linkedin.com/in/johndoe}} $|$ \href{https://github.com/johndoe}{\underline{github.com/johndoe}}
+\end{center}
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Stanford University}{September 2020 -- June 2024}
+      {Bachelor of Science in Computer Science}{Stanford, CA}
+      \resumeItemListStart
+        \resumeItem{GPA: 3.85/4.0}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Software Engineer Intern}{June 2023 -- September 2023}
+      {Google}{Mountain View, CA}
+      \resumeItemListStart
+        \resumeItem{Developed a microservice using Go and gRPC that reduced API latency by 40\% for 10M+ daily requests}
+        \resumeItem{Implemented caching layer with Redis, achieving 95\% cache hit rate and saving \$50K/month in compute costs}
+        \resumeItem{Collaborated with cross-functional team of 5 engineers to design and deploy feature flags system}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Backend Developer Intern}{May 2022 -- August 2022}
+      {Stripe}{San Francisco, CA}
+      \resumeItemListStart
+        \resumeItem{Built RESTful APIs in Python/Django handling 1M+ transactions daily with 99.99\% uptime}
+        \resumeItem{Optimized PostgreSQL queries reducing average response time from 200ms to 50ms}
+        \resumeItem{Wrote comprehensive test suite achieving 95\% code coverage across payment processing modules}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{AI Code Review Bot} $|$ \emph{Python, OpenAI API, GitHub Actions}}{January 2024}
+      \resumeItemListStart
+        \resumeItem{Engineered automated code review system using GPT-4 that analyzes PRs and suggests improvements}
+        \resumeItem{Deployed as GitHub Action, now used by 500+ repositories with 4.8/5 user satisfaction rating}
+        \resumeItem{Reduced average code review time by 60\% while catching 30\% more style violations}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Distributed Task Scheduler} $|$ \emph{Go, Redis, Docker, Kubernetes}}{August 2023}
+      \resumeItemListStart
+        \resumeItem{Designed distributed task scheduler supporting 10K concurrent jobs with fault tolerance}
+        \resumeItem{Implemented leader election using Redis ensuring zero downtime during node failures}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Technical Skills}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{Languages}{: Python, Go, Java, JavaScript, TypeScript, SQL, C++} \\
+      \textbf{Frameworks}{: React, Node.js, Django, FastAPI, Flask, Spring Boot} \\
+      \textbf{Developer Tools}{: Git, Docker, Kubernetes, Terraform, Jenkins, GitHub Actions} \\
+      \textbf{Cloud/DevOps}{: AWS (EC2, S3, Lambda, RDS), GCP, Azure, Redis, PostgreSQL, MongoDB}
+    }}
+  \end{itemize}
+
+\section{Extracurricular Activities}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Technical Lead}{September 2022 -- Present}
+      {Stanford ACM Chapter}{}
+      \resumeItemListStart
+        \resumeItem{Led team of 10 students organizing weekly coding competitions with 200+ participants}
+        \resumeItem{Mentored 15 freshmen in data structures and algorithms, 80\% placed in tech internships}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\end{document}
